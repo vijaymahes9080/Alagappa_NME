@@ -136,14 +136,14 @@ npm run dev
 
 ---
 
-## 🔐 Demo User Credentials (Quick Role Switcher)
+## 🔐 Demo User Credentials & Role Security
 
-| Role | Email | Features Available |
-| :--- | :--- | :--- |
-| **Student** | `student@alagappa.ac.in` | Course Registration, QR Slip, Waitlist, Timetable, AI Bot |
-| **Faculty** | `ramanathan@alagappa.ac.in` | Class Roster, QR Attendance Scanner, Internal Mark Entry |
-| **Department Admin** | `cs_admin@alagappa.ac.in` | Propose Courses, Assign Instructors, Seat Adjustments |
-| **Super Admin** | `admin@alagappa.ac.in` | University Analytics, Department Trends, Audit Logs |
+| Role | Username / Email | Required Password | Accessible Dashboard |
+| :--- | :--- | :--- | :--- |
+| **Super Admin** | `admin@alagappa.ac.in` | `SuperAdmin@2026` | `/admin/dashboard` |
+| **Department Admin** | `cs_admin@alagappa.ac.in` | `DeptAdmin@2026` | `/department/dashboard` |
+| **Faculty Instructor** | `ramanathan@alagappa.ac.in` | `Faculty@2026` | `/faculty/dashboard` |
+| **Student** | `student@alagappa.ac.in` | `Student@2026` | `/student/dashboard` |
 
 ---
 
