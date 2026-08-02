@@ -75,7 +75,7 @@ export default function Login() {
         
         {/* University Header */}
         <div className="text-center space-y-2 border-b border-slate-200 dark:border-slate-700 pb-4">
-          <img src="/assets/alagappa_logo.svg" alt="Alagappa University Seal" className="w-16 h-16 mx-auto" />
+          <img src="./assets/alagappa_logo.svg" alt="Alagappa University Seal" className="w-16 h-16 mx-auto" />
           <h2 className="font-serif font-bold text-2xl text-slate-900 dark:text-white">Alagappa University, Karaikudi</h2>
           <p className="text-xs text-alagappa-blue dark:text-alagappa-gold font-bold uppercase tracking-wider">
             NME Secure Single Sign-On Portal

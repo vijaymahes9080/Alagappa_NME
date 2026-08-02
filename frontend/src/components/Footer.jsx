@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-6">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <img src="/assets/alagappa_logo.svg" alt="Alagappa University" className="w-8 h-8" />
+            <img src="./assets/alagappa_logo.svg" alt="Alagappa University" className="w-8 h-8" />
             <h3 className="font-serif font-bold text-white text-base">Alagappa University</h3>
           </div>
           <p className="text-xs text-slate-400 leading-relaxed">

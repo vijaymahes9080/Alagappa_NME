@@ -82,7 +82,7 @@ export default function Navbar() {
         {/* Brand Info */}
         <Link to="/" className="flex items-center gap-3 group">
           <img 
-            src="/assets/alagappa_logo.svg" 
+            src="./assets/alagappa_logo.svg" 
             alt="Alagappa University Seal" 
             className="w-10 h-10 drop-shadow group-hover:scale-105 transition-transform" 
           />

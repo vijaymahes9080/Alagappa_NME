@@ -8,7 +8,7 @@ export default function CertificateGenerator({ studentName, courseTitle, complet
 
   return (
     <div className="bg-white dark:bg-slate-900 border-4 border-double border-alagappa-gold p-6 rounded-3xl shadow-xl space-y-4 max-w-lg mx-auto text-center">
-      <img src="/assets/alagappa_logo.svg" alt="Alagappa Seal" className="w-16 h-16 mx-auto" />
+      <img src="./assets/alagappa_logo.svg" alt="Alagappa Seal" className="w-16 h-16 mx-auto" />
       <h3 className="font-serif font-bold text-xl text-alagappa-blue dark:text-alagappa-gold uppercase tracking-wider">
         Alagappa University, Karaikudi
       </h3>

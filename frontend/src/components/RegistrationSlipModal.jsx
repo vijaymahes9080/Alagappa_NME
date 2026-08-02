@@ -14,7 +14,7 @@ export default function RegistrationSlipModal({ registration, course, student, o
         {/* Modal Header */}
         <div className="bg-gradient-to-r from-alagappa-darkblue to-alagappa-maroon text-white p-5 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src="/assets/alagappa_logo.svg" alt="Alagappa Seal" className="w-9 h-9" />
+            <img src="./assets/alagappa_logo.svg" alt="Alagappa Seal" className="w-9 h-9" />
             <div>
               <h2 className="font-serif font-bold text-base">Alagappa University, Karaikudi</h2>
               <p className="text-xs text-alagappa-gold">Official NME Course Registration Slip</p>
