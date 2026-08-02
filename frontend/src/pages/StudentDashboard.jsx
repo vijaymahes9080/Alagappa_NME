@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import RegistrationSlipModal from '../components/RegistrationSlipModal';
+import CreditPointsLedger from '../components/CreditPointsLedger';
+import CertificateGenerator from '../components/CertificateGenerator';
 import { 
   BookOpen, 
   CheckCircle2, 
@@ -74,6 +76,10 @@ export default function StudentDashboard() {
           </div>
         </div>
       </div>
+
+      <CreditPointsLedger student={user} />
+
+      <CertificateGenerator studentName={user?.name} courseTitle={myCourse.title} />
 
       {/* Main Registered Course Card */}
       <div className="space-y-4">

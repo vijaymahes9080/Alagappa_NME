@@ -1,4 +1,6 @@
 import React from 'react';
+import AnnouncementBroadcaster from '../components/AnnouncementBroadcaster';
+import SystemHealthMonitor from '../components/SystemHealthMonitor';
 import { 
   Users, 
   BookOpen, 
@@ -57,6 +59,10 @@ export default function AdminDashboard() {
           );
         })}
       </div>
+
+      <SystemHealthMonitor />
+
+      <AnnouncementBroadcaster />
 
       {/* Visual Analytics Simulation Bar */}
       <div className="bg-white dark:bg-slate-800 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">

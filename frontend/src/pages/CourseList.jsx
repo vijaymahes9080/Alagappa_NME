@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import CourseCard from '../components/CourseCard';
 import RegistrationSlipModal from '../components/RegistrationSlipModal';
 import AIChatbot from '../components/AIChatbot';
+import VoiceSearch from '../components/VoiceSearch';
+import TimetableConflictChecker from '../components/TimetableConflictChecker';
 import { useAuth } from '../context/AuthContext';
 import { useSocket } from '../context/SocketContext';
 import { LanguageManager } from '../i18n/i18n';
@@ -208,15 +210,18 @@ export default function CourseList() {
       {/* Search and Filters */}
       <div className="bg-white dark:bg-slate-800 p-6 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-4">
         <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
-          <div className="relative flex-1 w-full">
-            <Search className="w-5 h-5 text-slate-400 absolute left-4 top-3.5" />
-            <input
-              type="text"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder={LanguageManager.get('searchPlaceholder')}
-              className="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-alagappa-blue dark:focus:ring-alagappa-gold"
-            />
+          <div className="relative flex-1 w-full flex items-center gap-2">
+            <div className="relative flex-1">
+              <Search className="w-5 h-5 text-slate-400 absolute left-4 top-3.5" />
+              <input
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder={LanguageManager.get('searchPlaceholder')}
+                className="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-alagappa-blue dark:focus:ring-alagappa-gold"
+              />
+            </div>
+            <VoiceSearch onSearch={(val) => setSearch(val)} />
           </div>
 
           <div className="flex flex-wrap items-center gap-3 w-full md:w-auto text-xs font-medium">
@@ -248,6 +253,8 @@ export default function CourseList() {
             </select>
           </div>
         </div>
+
+        <TimetableConflictChecker />
       </div>
 
       {/* Course Grid */}

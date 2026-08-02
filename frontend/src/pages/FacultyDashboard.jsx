@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import QRScannerModal from '../components/QRScannerModal';
+import GradingRubricBuilder from '../components/GradingRubricBuilder';
 import { 
   Users, 
   CheckSquare, 
@@ -12,6 +14,7 @@ import {
 export default function FacultyDashboard() {
   const [activeTab, setActiveTab] = useState('STUDENTS');
   const [search, setSearch] = useState('');
+  const [isScannerOpen, setIsScannerOpen] = useState(false);
 
   const studentsList = [
     { id: "1", regNo: "2024101001", name: "K. Vijaykumar", dept: "Management", attendance: "PRESENT", mark: 24.5 },
@@ -29,11 +32,16 @@ export default function FacultyDashboard() {
           <h1 className="font-serif font-bold text-2xl">Dr. R. Ramanathan Desk</h1>
           <p className="text-xs text-slate-200">Course: NME-CSE-101 Python Programming (Enrolled: 42 / 60)</p>
         </div>
-        <button className="flex items-center gap-2 bg-alagappa-gold text-alagappa-darkblue font-bold px-4 py-2 rounded-xl text-xs shadow hover:bg-amber-400 transition">
+        <button 
+          onClick={() => setIsScannerOpen(true)}
+          className="flex items-center gap-2 bg-alagappa-gold text-alagappa-darkblue font-bold px-4 py-2 rounded-xl text-xs shadow hover:bg-amber-400 transition"
+        >
           <QrCode className="w-4 h-4" />
           <span>Launch QR Attendance Scanner</span>
         </button>
       </div>
+
+      <GradingRubricBuilder />
 
       {/* Tabs */}
       <div className="flex gap-3 border-b border-slate-200 dark:border-slate-700 text-xs font-bold">
@@ -117,6 +125,8 @@ export default function FacultyDashboard() {
           </table>
         </div>
       </div>
+
+      <QRScannerModal isOpen={isScannerOpen} onClose={() => setIsScannerOpen(false)} />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DepartmentAnalyticsMatrix from '../components/DepartmentAnalyticsMatrix';
 import { PlusCircle, Shield, CheckCircle2, AlertCircle, Edit3, Trash2 } from 'lucide-react';
 
 export default function DepartmentDashboard() {
@@ -44,6 +45,8 @@ export default function DepartmentDashboard() {
           <span>Propose New NME Elective</span>
         </button>
       </div>
+
+      <DepartmentAnalyticsMatrix />
 
       {/* Managed Courses Table */}
       <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden">
