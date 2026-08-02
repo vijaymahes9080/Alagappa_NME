@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ProtectedRoute from './components/ProtectedRoute';
 import Login from './pages/Login';
 import CourseList from './pages/CourseList';
 import StudentDashboard from './pages/StudentDashboard';
@@ -20,11 +21,55 @@ export default function App() {
             <Route path="/" element={<CourseList />} />
             <Route path="/courses" element={<CourseList />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/student/dashboard" element={<StudentDashboard />} />
-            <Route path="/student/timetable" element={<TimetablePage />} />
-            <Route path="/faculty/dashboard" element={<FacultyDashboard />} />
-            <Route path="/department/dashboard" element={<DepartmentDashboard />} />
-            <Route path="/admin/dashboard" element={<AdminDashboard />} />
+            
+            {/* Protected Student Routes */}
+            <Route 
+              path="/student/dashboard" 
+              element={
+                <ProtectedRoute requiredRole="STUDENT">
+                  <StudentDashboard />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/student/timetable" 
+              element={
+                <ProtectedRoute requiredRole="STUDENT">
+                  <TimetablePage />
+                </ProtectedRoute>
+              } 
+            />
+
+            {/* Protected Faculty Routes */}
+            <Route 
+              path="/faculty/dashboard" 
+              element={
+                <ProtectedRoute requiredRole="FACULTY">
+                  <FacultyDashboard />
+                </ProtectedRoute>
+              } 
+            />
+
+            {/* Protected Department Admin Routes */}
+            <Route 
+              path="/department/dashboard" 
+              element={
+                <ProtectedRoute requiredRole="DEPT_ADMIN">
+                  <DepartmentDashboard />
+                </ProtectedRoute>
+              } 
+            />
+
+            {/* Protected Super Admin Routes */}
+            <Route 
+              path="/admin/dashboard" 
+              element={
+                <ProtectedRoute requiredRole="SUPER_ADMIN">
+                  <AdminDashboard />
+                </ProtectedRoute>
+              } 
+            />
+
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
