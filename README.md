@@ -59,21 +59,25 @@ Alagappa_NME/
 
 ---
 
-## 🚀 Quick Start Guide (No Docker Required)
+## 🚀 Quick Start Guide (One-Click Launcher)
 
-### 1. Prerequisites
-- **Node.js**: v18.x or higher
-- **npm**: v9.x or higher
+### Option 1: Double-Click `.bat` Launcher (Windows)
+Double-click [`start_all.bat`](file:///d:/intership/Alagappa_NME/start_all.bat) or [`run.bat`](file:///d:/intership/Alagappa_NME/run.bat) in the project root folder.
+This will automatically open separate terminal windows for both backend and frontend servers:
+- **Backend API & Socket Server**: `http://localhost:5000`
+- **Frontend React Portal**: `http://localhost:3000`
 
-### 2. Launch Backend API & Socket Server
+---
+
+### Option 2: Manual Terminal Commands
+
+#### 1. Start Backend API & Socket Server
 ```bash
 cd backend
 npm run dev
 ```
-- API Base URL: `http://localhost:5000/api/v1`
-- Socket.io Endpoint: `ws://localhost:5000`
 
-### 3. Launch Frontend Web Application
+#### 2. Start Frontend React Web Application
 ```bash
 cd frontend
 npm run dev
