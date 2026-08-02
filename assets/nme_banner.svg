@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002244" />
+      <stop offset="50%" stop-color="#003366" />
+      <stop offset="100%" stop-color="#800000" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(252, 211, 77, 0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+  <rect width="1200" height="400" fill="url(#grid)" />
+  
+  <!-- Glowing Orbs -->
+  <circle cx="1000" cy="100" r="250" fill="#D4AF37" opacity="0.1" filter="blur(40px)" />
+  <circle cx="200" cy="350" r="200" fill="#3B82F6" opacity="0.15" filter="blur(40px)" />
+
+  <!-- Text Header -->
+  <text x="80" y="140" font-family="'Georgia', serif" font-size="42" font-weight="bold" fill="#FCE7F3">
+    ALAGAPPA UNIVERSITY
+  </text>
+  <text x="80" y="190" font-family="'Inter', sans-serif" font-size="28" font-weight="600" fill="#FCD34D">
+    Non-Major Elective (NME) Course Registration Portal
+  </text>
+  <text x="80" y="240" font-family="'Inter', sans-serif" font-size="18" fill="#E2E8F0" width="600">
+    Empowering students with real-time elective selection, timetable clash resolution, and instant seating.
+  </text>
+
+  <!-- Status Pills -->
+  <rect x="80" y="280" width="160" height="40" rx="20" fill="rgba(16, 185, 129, 0.2)" stroke="#10B981" stroke-width="1.5" />
+  <circle cx="105" cy="300" r="6" fill="#10B981" />
+  <text x="122" y="306" font-family="sans-serif" font-size="14" font-weight="600" fill="#34D399">Real-Time Sync</text>
+
+  <rect x="260" y="280" width="180" height="40" rx="20" fill="rgba(245, 158, 11, 0.2)" stroke="#F59E0B" stroke-width="1.5" />
+  <circle cx="285" cy="300" r="6" fill="#F59E0B" />
+  <text x="302" y="306" font-family="sans-serif" font-size="14" font-weight="600" fill="#FBBF24">AI Recommendations</text>
+</svg>
