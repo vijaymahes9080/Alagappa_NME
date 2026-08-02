@@ -9,6 +9,48 @@ An enterprise-grade, real-time Non-Major Elective (NME) Course Registration Port
 
 ---
 
+## 📸 Interactive System Visual Carousel & Vector Gallery
+
+````carousel
+![Alagappa NME Portal Hero Banner](assets/nme_banner.svg)
+<!-- slide -->
+![Student Portal & Real-Time Seat Counter](assets/student_dashboard_hero.svg)
+<!-- slide -->
+![Faculty Classroom QR Scanner](assets/faculty_attendance_qr.svg)
+<!-- slide -->
+![Super Admin University Enrollment Analytics](assets/admin_analytics_chart.svg)
+<!-- slide -->
+![Alagappa AI Course Advisor Bot](assets/ai_recommendation_bot.svg)
+<!-- slide -->
+![Official Verified NME Digital Gold Badge](assets/nme_certificate_badge.svg)
+````
+
+---
+
+## 🖼️ Multi-Image Feature Matrix
+
+| 🎓 Student Course Discovery & Seat Counter | 👨‍🏫 Faculty QR Attendance Scanner |
+| :---: | :---: |
+| <img src="assets/student_dashboard_hero.svg" alt="Student Dashboard" width="100%" /> | <img src="assets/faculty_attendance_qr.svg" alt="Faculty QR Scanner" width="100%" /> |
+| **Real-time seat count with live Green/Amber/Red indicators** | **Instant camera QR scanner for student verification** |
+
+<br/>
+
+| ⚡ Super Admin Department Ratios | 🤖 AI Course Advisor Bot |
+| :---: | :---: |
+| <img src="assets/admin_analytics_chart.svg" alt="Admin Analytics" width="100%" /> | <img src="assets/ai_recommendation_bot.svg" alt="AI Course Advisor" width="100%" /> |
+| **Department fill velocity & audit activity tracking** | **Personalized recommendations based on CGPA & schedule** |
+
+<br/>
+
+<p align="center">
+  <img src="assets/nme_certificate_badge.svg" alt="Verified NME Certificate Badge" width="240" />
+  <br/>
+  <b>Official Alagappa University NME Digital Seal &amp; Badge</b>
+</p>
+
+---
+
 ## 🎨 Official Alagappa University Theme & Branding
 
 | Primary Brand Color | Hex Code | Role |
@@ -18,27 +60,7 @@ An enterprise-grade, real-time Non-Major Elective (NME) Course Registration Port
 | **Crimson Maroon** | `#800000` | Accent stripes, warning badges & department highlights |
 | **Warm Gold** | `#D4AF37` | Text highlights, active tabs, seals & icons |
 
----
-
-## 📸 System Visual Showcase & Vector Graphics Gallery
-
-<p align="center">
-  <img src="assets/nme_banner.svg" alt="Alagappa NME Banner" width="100%" />
-</p>
-
-| Student Portal & Real-Time Seat Counter | Faculty QR Scanner & Verification |
-| :---: | :---: |
-| ![Student Dashboard](assets/student_dashboard_hero.svg) | ![Faculty QR Scanner](assets/faculty_attendance_qr.svg) |
-
-| Super Admin Analytics & Seat Fill Ratios | AI Course Advisor & Recommendation Bot |
-| :---: | :---: |
-| ![Admin Analytics](assets/admin_analytics_chart.svg) | ![AI Advisor Bot](assets/ai_recommendation_bot.svg) |
-
-<p align="center">
-  <img src="assets/nme_certificate_badge.svg" alt="Verified NME Certificate Badge" width="220" />
-  <br/>
-  <sub><b>Official Alagappa University NME Digital Gold Badge</b></sub>
-</p>
+*The official vector logo asset is located at [`assets/alagappa_logo.svg`](assets/alagappa_logo.svg).*
 
 ---
 
@@ -66,7 +88,7 @@ Alagappa_NME/
 ├── database/             # Prisma Schema (schema.prisma) & SQLite/PostgreSQL setup
 ├── database-schema/      # Standalone SQL schema definitions (schema.sql)
 ├── docs/                 # 13 SRS & Technical Specifications (Architecture, DFD, ERD, Security)
-├── assets/               # SVG Branding (alagappa_logo.svg, nme_banner.svg)
+├── assets/               # SVG Branding (alagappa_logo.svg, nme_banner.svg, student_dashboard_hero.svg...)
 ├── wireframes/           # Text & SVG UI/UX Wireframes (UI_Wireframes.md)
 ├── postman/              # Ready-to-import Postman API Collection (NME_API_Collection.json)
 ├── swagger/              # OpenAPI 3.0 API Specification (openapi.json)
@@ -90,7 +112,7 @@ Alagappa_NME/
 ## 🚀 Quick Start Guide (One-Click Launcher)
 
 ### Option 1: Double-Click `.bat` Launcher (Windows)
-Double-click [`start_all.bat`](file:///d:/intership/Alagappa_NME/start_all.bat) or [`run.bat`](file:///d:/intership/Alagappa_NME/run.bat) in the project root folder.
+Double-click [`start_all.bat`](start_all.bat) or [`run.bat`](run.bat) in the project root folder.
 This will automatically launch separate terminal windows for both backend and frontend:
 - **Backend API & Socket Server**: `http://localhost:5000`
 - **Frontend React Portal**: `http://localhost:3000`
@@ -126,5 +148,5 @@ npm run dev
 
 ## 📜 License & Copyright
 
-Distributed under the [MIT License](file:///d:/intership/Alagappa_NME/LICENSE).
+Distributed under the [MIT License](LICENSE).
 Copyright © 2026 Vijay Mahes / Alagappa University, Karaikudi. All rights reserved.
