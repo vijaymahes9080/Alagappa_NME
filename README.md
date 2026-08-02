@@ -1,6 +1,7 @@
 # 🏛️ Alagappa University Real-Time NME Course Registration System
 
 [![Alagappa University](https://img.shields.io/badge/University-Alagappa%20University%2C%20Karaikudi-003366?style=for-the-badge&logo=education)](https://nme.alagappa.ac.in)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Deployment-10B981?style=for-the-badge&logo=github)](https://vijaymahes9080.github.io/Alagappa_NME/)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-10B981?style=for-the-badge)](file:///d:/intership/Alagappa_NME/docs)
 [![License](https://img.shields.io/badge/License-MIT-D4AF37?style=for-the-badge)](file:///d:/intership/Alagappa_NME/LICENSE)
 [![Author](https://img.shields.io/badge/Author-Vijay%20Mahes-002244?style=for-the-badge)](mailto:Vijaypradhap2004@gmail.com)

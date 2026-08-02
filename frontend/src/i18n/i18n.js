@@ -1,6 +1,4 @@
-import i18n from 'i18n-js';
-
-// Simple lightweight translation layer
+// Simple lightweight translation layer for Alagappa University NME Portal
 const translations = {
   en: {
     university: "Alagappa University",
