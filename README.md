@@ -2,7 +2,8 @@
 
 [![Alagappa University](https://img.shields.io/badge/University-Alagappa%20University%2C%20Karaikudi-003366?style=for-the-badge&logo=education)](https://nme.alagappa.ac.in)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-10B981?style=for-the-badge)](file:///d:/intership/Alagappa_NME/docs)
-[![License](https://img.shields.io/badge/License-Academic%20Enterprise-D4AF37?style=for-the-badge)](#)
+[![License](https://img.shields.io/badge/License-MIT-D4AF37?style=for-the-badge)](file:///d:/intership/Alagappa_NME/LICENSE)
+[![Author](https://img.shields.io/badge/Author-Vijay%20Mahes-002244?style=for-the-badge)](mailto:Vijaypradhap2004@gmail.com)
 
 An enterprise-grade, real-time Non-Major Elective (NME) Course Registration Portal engineered for **Alagappa University, Karaikudi**. Designed to digitize elective course selection, eliminate timetable conflicts, provide sub-second live seat tracking, auto-manage waiting lists, and support bilingual access (**English & Tamil தமிழ்**).
 
@@ -21,18 +22,18 @@ An enterprise-grade, real-time Non-Major Elective (NME) Course Registration Port
 
 ---
 
-## ⚡ Key System Features
+## ⚡ Key System Features & Enterprise Innovations
 
 - **🔴🟡🟢 Real-Time Seat Counter**: Live Socket.io seat synchronization with color indicators (Green > 20% available, Amber ≤ 20% left, Red = FULL / Waitlist).
-- **🎓 Role-Based Dashboards**:
-  - **Super Admin**: University-wide registration analytics, department fill ratio charts, live audit logs.
-  - **Department Admin**: Course proposals, faculty assignment, seat limit adjustments, approval workflows.
-  - **Faculty**: Enrolled student rosters, QR attendance scanner, internal assessment mark uploader.
-  - **Student**: Live course search & filter, AI recommendations, conflict-free registration, printable **Registration Pass with QR Code**, timetable schedule viewer.
-- **🌐 Bilingual UI**: Instant toggle between **English** and **Tamil (தமிழ்)**.
-- **🤖 AI Course Advisor**: Embedded floating AI chatbot providing personalized elective recommendations based on department, credits, and schedule compatibility.
-- **⏳ Automatic Waitlist Engine**: Automatically queue students when a course hits capacity, with auto-promotion when a registered student drops.
-- **📱 QR Code Pass**: Instant QR code generation on registration slips for classroom attendance scanning.
+- **🗣️ AI Voice Search Controller**: Web Speech API voice search supporting queries in English and Tamil.
+- **📷 QR Code Classroom Attendance Scanner**: Camera scanner for Faculty to verify student registration slips and mark attendance.
+- **📅 Timetable Conflict Checker Matrix**: Visual schedule grid preventing day/time course overlaps.
+- **💳 Credit Points & Fee Waiver Ledger**: Tracks Govt. of Tamil Nadu tuition fee waivers and CGPA honors qualification.
+- **📜 Verified Completion Certificate Generator**: Instant PDF certificate renderer signed by Alagappa University NME Cell.
+- **📊 Department Analytics Matrix**: Fill velocity charts and CSV export matrix for university administrators.
+- **🤖 AI Course Advisor**: Embedded floating AI chatbot for course recommendations.
+- **📱 PWA & Offline Engine**: Full Service Worker caching and PWA installation manifest.
+- **🎓 Role-Based Dashboards**: Super Admin, Department Admin, Faculty, and Student portals.
 
 ---
 
@@ -54,7 +55,14 @@ Alagappa_NME/
 ├── reports/              # Sample JSON/PDF Export Templates (Sample_Analytics_Report.json)
 ├── security/             # Security Policies & OWASP Compliance Checklist (Security_Policy.md)
 ├── diagrams/             # Mermaid Architecture & Registration Sequence Flowcharts
-└── prompts/              # AI Engine prompts & documentation rules (system_prompts.md)
+├── prompts/              # AI Engine prompts & documentation rules (system_prompts.md)
+├── start_all.bat         # One-click Windows batch launcher for both servers
+├── run.bat               # Shortcut batch launcher
+├── LICENSE               # Official MIT Open-Source License
+├── .gitignore            # Git exclusion rules
+├── composer.json         # Project metadata & author details
+├── comment.md            # Complete prompt, feedback, and execution log
+└── README.md             # Master project documentation
 ```
 
 ---
@@ -63,7 +71,7 @@ Alagappa_NME/
 
 ### Option 1: Double-Click `.bat` Launcher (Windows)
 Double-click [`start_all.bat`](file:///d:/intership/Alagappa_NME/start_all.bat) or [`run.bat`](file:///d:/intership/Alagappa_NME/run.bat) in the project root folder.
-This will automatically open separate terminal windows for both backend and frontend servers:
+This will automatically launch separate terminal windows for both backend and frontend:
 - **Backend API & Socket Server**: `http://localhost:5000`
 - **Frontend React Portal**: `http://localhost:3000`
 
@@ -82,13 +90,10 @@ npm run dev
 cd frontend
 npm run dev
 ```
-- Web Application URL: `http://localhost:3000`
 
 ---
 
 ## 🔐 Demo User Credentials (Quick Role Switcher)
-
-Use the dropdown in the top navigation bar or log in with these roles:
 
 | Role | Email | Features Available |
 | :--- | :--- | :--- |
@@ -99,14 +104,7 @@ Use the dropdown in the top navigation bar or log in with these roles:
 
 ---
 
-## 📄 Documentation Links
+## 📜 License & Copyright
 
-- [Requirement Analysis](file:///d:/intership/Alagappa_NME/docs/01_Requirement_Analysis.md)
-- [Functional Requirements](file:///d:/intership/Alagappa_NME/docs/02_Functional_Requirements.md)
-- [System Architecture & Workflow](file:///d:/intership/Alagappa_NME/docs/06_Workflow.md)
-- [Postman API Collection](file:///d:/intership/Alagappa_NME/postman/NME_API_Collection.json)
-- [Swagger OpenAPI Spec](file:///d:/intership/Alagappa_NME/swagger/openapi.json)
-
----
-
-© 2026 Alagappa University, Karaikudi. All rights reserved.
+Distributed under the [MIT License](file:///d:/intership/Alagappa_NME/LICENSE).
+Copyright © 2026 Vijay Mahes / Alagappa University, Karaikudi. All rights reserved.
