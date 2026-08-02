@@ -1,0 +1,15 @@
+{
+  "short_name": "Alagappa NME",
+  "name": "Alagappa University NME Portal",
+  "icons": [
+    {
+      "src": "/assets/alagappa_logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#002244",
+  "theme_color": "#003366",
+  "display": "standalone"
+}
