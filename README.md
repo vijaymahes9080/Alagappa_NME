@@ -18,7 +18,27 @@ An enterprise-grade, real-time Non-Major Elective (NME) Course Registration Port
 | **Crimson Maroon** | `#800000` | Accent stripes, warning badges & department highlights |
 | **Warm Gold** | `#D4AF37` | Text highlights, active tabs, seals & icons |
 
-*The official vector logo asset is located at [`assets/alagappa_logo.svg`](file:///d:/intership/Alagappa_NME/assets/alagappa_logo.svg).*
+---
+
+## 📸 System Visual Showcase & Vector Graphics Gallery
+
+<p align="center">
+  <img src="assets/nme_banner.svg" alt="Alagappa NME Banner" width="100%" />
+</p>
+
+| Student Portal & Real-Time Seat Counter | Faculty QR Scanner & Verification |
+| :---: | :---: |
+| ![Student Dashboard](assets/student_dashboard_hero.svg) | ![Faculty QR Scanner](assets/faculty_attendance_qr.svg) |
+
+| Super Admin Analytics & Seat Fill Ratios | AI Course Advisor & Recommendation Bot |
+| :---: | :---: |
+| ![Admin Analytics](assets/admin_analytics_chart.svg) | ![AI Advisor Bot](assets/ai_recommendation_bot.svg) |
+
+<p align="center">
+  <img src="assets/nme_certificate_badge.svg" alt="Verified NME Certificate Badge" width="220" />
+  <br/>
+  <sub><b>Official Alagappa University NME Digital Gold Badge</b></sub>
+</p>
 
 ---
 

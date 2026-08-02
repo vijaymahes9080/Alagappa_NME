@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6D365" />
+      <stop offset="100%" stop-color="#FDA085" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003366" />
+      <stop offset="100%" stop-color="#001F3F" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Gold Ring -->
+  <circle cx="250" cy="250" r="230" fill="url(#blueGrad)" stroke="#D4AF37" stroke-width="12" filter="url(#shadow)" />
+  <circle cx="250" cy="250" r="215" fill="none" stroke="#D4AF37" stroke-dasharray="6 4" stroke-width="2" />
+  
+  <!-- Inner Blue Ring -->
+  <circle cx="250" cy="250" r="175" fill="#002244" stroke="#800000" stroke-width="8" />
+
+  <!-- Circular Text Curved Path -->
+  <path id="textPathTop" d="M 90 250 A 160 160 0 0 1 410 250" fill="none" />
+  <text font-family="'Georgia', serif" font-size="22" font-weight="bold" fill="#D4AF37" letter-spacing="3">
+    <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">ALAGAPPA UNIVERSITY</textPath>
+  </text>
+  
+  <path id="textPathBottom" d="M 410 250 A 160 160 0 0 1 90 250" fill="none" />
+  <text font-family="'Segoe UI', sans-serif" font-size="18" font-weight="600" fill="#FFFFFF" letter-spacing="2">
+    <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">KARAIKUDI • EXCELLENCE IN EDUCATION</textPath>
+  </text>
+  
+  <!-- Center Emblem Graphics -->
+  <!-- Open Book -->
+  <path d="M 170 270 Q 250 240 250 280 Q 250 240 330 270 L 330 330 Q 250 300 250 335 Q 250 300 170 330 Z" fill="#FFFFFF" stroke="#D4AF37" stroke-width="3" />
+  <path d="M 250 280 L 250 335" stroke="#003366" stroke-width="2" />
+  <path d="M 185 285 Q 220 270 240 290" fill="none" stroke="#003366" stroke-width="1.5" />
+  <path d="M 185 300 Q 220 285 240 305" fill="none" stroke="#003366" stroke-width="1.5" />
+  <path d="M 315 285 Q 280 270 260 290" fill="none" stroke="#003366" stroke-width="1.5" />
+  <path d="M 315 300 Q 280 285 260 305" fill="none" stroke="#003366" stroke-width="1.5" />
+  
+  <!-- Rising Sun / Knowledge Rays -->
+  <path d="M 250 170 L 250 210 M 210 180 L 230 215 M 290 180 L 270 215 M 180 210 L 215 230 M 320 210 L 285 230" stroke="#F6D365" stroke-width="4" stroke-linecap="round" />
+  <circle cx="250" cy="225" r="20" fill="#D4AF37" />
+
+  <!-- Stars -->
+  <polygon points="120,250 125,260 135,260 127,267 130,277 120,271 110,277 113,267 105,260 115,260" fill="#D4AF37" />
+  <polygon points="380,250 385,260 395,260 387,267 390,277 380,271 370,277 373,267 365,260 375,260" fill="#D4AF37" />
+</svg>
