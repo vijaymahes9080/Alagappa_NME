@@ -1,0 +1,12 @@
+{
+    "name": "alagappa/nme-system",
+    "description": "Alagappa University Real-Time NME Course Registration System",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vijay Mahes",
+            "email": "Vijaypradhap2004@gmail.com"
+        }
+    ],
+    "require": {}
+}

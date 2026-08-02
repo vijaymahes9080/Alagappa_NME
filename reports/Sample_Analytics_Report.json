@@ -1,0 +1,17 @@
+{
+  "reportTitle": "Alagappa University NME Registration Analytics 2026",
+  "generatedAt": "2026-08-02T06:30:00.000Z",
+  "totalStudentsRegistered": 4820,
+  "totalNmeCourses": 24,
+  "seatFillRate": "84.2%",
+  "mostPopularCourse": {
+    "code": "NME-MGT-201",
+    "title": "Digital Marketing & Social Media Strategy",
+    "fillPercentage": 100
+  },
+  "departmentDistribution": [
+    { "department": "Computer Science", "registrations": 212 },
+    { "department": "Management Studies", "registrations": 180 },
+    { "department": "Commerce", "registrations": 170 }
+  ]
+}

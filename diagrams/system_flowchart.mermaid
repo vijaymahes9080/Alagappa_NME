@@ -1,0 +1,10 @@
+graph TD
+    A[Student Login] --> B[Browse NME Courses]
+    B --> C{Check Seat Availability}
+    C -- Seats > 0 --> D[Check Schedule Clash]
+    D -- No Clash --> E[Confirm Registration & Decrement Seat]
+    E --> F[Broadcast Seat Count via Socket.io]
+    E --> G[Generate Registration Slip & QR Code]
+    C -- Seats = 0 --> H[Add to Waiting List]
+    H --> I[Wait for Drop Event]
+    I -- Drop Event Occurs --> J[Auto-promote First Waitlisted Student]

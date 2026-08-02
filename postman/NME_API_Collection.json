@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "a91b2c3d-e45f-47a1-8901-23456789abcd",
+		"name": "Alagappa University Real-Time NME Portal API",
+		"description": "API collection for Auth, Courses, Registration Engine, Seat Management, Analytics, and Notifications.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{ "key": "Content-Type", "value": "application/json" }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"student@alagappa.ac.in\",\n  \"password\": \"student123\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/auth/login",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "auth", "login"]
+						}
+					}
+				},
+				{
+					"name": "Get Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{ "key": "Authorization", "value": "Bearer {{token}}" }
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/auth/me",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "auth", "me"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "List All NME Courses",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/courses?department=CSE&semester=3",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "courses"],
+							"query": [
+								{ "key": "department", "value": "CSE" },
+								{ "key": "semester", "value": "3" }
+							]
+						}
+					}
+				},
+				{
+					"name": "Get AI Course Recommendations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{ "key": "Authorization", "value": "Bearer {{token}}" }
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/courses/recommendations",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "courses", "recommendations"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Registrations",
+			"item": [
+				{
+					"name": "Register for Course",
+					"request": {
+						"method": "POST",
+						"header": [
+							{ "key": "Authorization", "value": "Bearer {{token}}" },
+							{ "key": "Content-Type", "value": "application/json" }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"courseId\": \"course-cse-101\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/registrations",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "registrations"]
+						}
+					}
+				},
+				{
+					"name": "Drop Course",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{ "key": "Authorization", "value": "Bearer {{token}}" }
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/registrations/course-cse-101",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "v1", "registrations", "course-cse-101"]
+						}
+					}
+				}
+			]
+		}
+	],
+	"variable": [
+		{ "key": "baseUrl", "value": "http://localhost:5000" }
+	]
+}

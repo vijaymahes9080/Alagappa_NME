@@ -1,0 +1,59 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Alagappa University Real-Time NME Registration Portal API",
+    "version": "1.0.0",
+    "description": "Enterprise OpenAPI specification for Alagappa University Non-Major Elective system."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000/api/v1",
+      "description": "Local Development Server"
+    }
+  ],
+  "paths": {
+    "/auth/login": {
+      "post": {
+        "summary": "User Login",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": { "type": "string" },
+                  "password": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Login successful, returns JWT token & user profile" },
+          "401": { "description": "Invalid credentials" }
+        }
+      }
+    },
+    "/courses": {
+      "get": {
+        "summary": "Retrieve available NME Courses",
+        "parameters": [
+          { "name": "department", "in": "query", "schema": { "type": "string" } },
+          { "name": "semester", "in": "query", "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "List of NME courses with real-time seat availability" }
+        }
+      }
+    },
+    "/registrations": {
+      "post": {
+        "summary": "Register for an NME course",
+        "responses": {
+          "200": { "description": "Registered successfully or waitlisted" }
+        }
+      }
+    }
+  }
+}
