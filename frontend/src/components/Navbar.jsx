@@ -38,8 +38,8 @@ export default function Navbar() {
       <div className="bg-black/20 text-xs py-1 px-4 border-b border-white/10 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <span className="flex items-center gap-1.5 text-alagappa-gold font-semibold">
-            <Radio className={`w-3.5 h-3.5 ${isConnected ? 'text-emerald-400 animate-pulse' : 'text-slate-400'}`} />
-            {isConnected ? LanguageManager.get('liveCounter') : 'Realtime Engine Standby'}
+            <Radio className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
+            {LanguageManager.get('liveCounter')}
           </span>
           <span className="hidden md:inline text-slate-300">|</span>
           <span className="hidden md:inline text-slate-300">Academic Session: 2026-2027 (Odd Semester)</span>
